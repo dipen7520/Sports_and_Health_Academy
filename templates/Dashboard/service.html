@@ -1,0 +1,126 @@
+{% extends 'Dashboard/base.html' %}
+{% load static %}
+{% block base %}
+  <div class="wrapper ">
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:;">Our Services</a>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content"> 
+       <div>
+      <a type="button" class="btn btn-secondary btn-lg btn-block btnservice" href="{% url 'reg' %}">Book Your Services Now</a>
+      </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card pb-3">
+              <div class="card-header">
+                <h5 class="card-title">Time Base Exersice</h5>
+                 <img src="{% static 'Dashboard/img/TBE.jpg'%}" class="mt-4" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card pb-3">
+              <div class="card-header ">
+                <h5 class="card-title">Gymnasium</h5>
+                <img src="{% static 'Dashboard/img/gym.png'%}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card pb-3">
+              <div class="card-header">
+                <h5 class="card-title">Cricket</h5>
+                <img src="{% static 'Dashboard/img/Cricket.png'%}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card pb-3">
+              <div class="card-header ">
+                <h5 class="card-title">Badminton</h5>
+               <img src="{% static 'Dashboard/img/BM.jpg'%}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card pb-3">
+              <div class="card-header ">
+                <h5 class="card-title">Basketball</h5>
+               <img src="{% static 'Dashboard/img/BB.jpg'%}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card pb-3">
+              <div class="card-header ">
+                <h5 class="card-title">Football</h5>
+                <img src="{% static 'Dashboard/img/FB.jpg'%}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card pb-3">
+              <div class="card-header ">
+                <h5 class="card-title">Swimming</h5>
+                <img src="{% static 'Dashboard/img/Swng.jpg'%}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card pb-3">
+              <div class="card-header ">
+                <h5 class="card-title">Hockey</h5>
+                <img src="{% static 'Dashboard/img/HK.jpg'%}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card pb-3">
+              <div class="card-header ">
+                <h5 class="card-title">Tennis</h5>
+                <img src="{% static 'Dashboard/img/Wrlng.jpg'%}" class="mt-3" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card pb-3">
+              <div class="card-header ">
+                <h5 class="card-title">Gymnastics</h5>
+                <img src="{% static 'Dashboard/img/Gymnastic.jpg'%}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card pb-3">
+              <div class="card-header ">
+                <h5 class="card-title">Vollyball</h5>
+                <img src="{% static 'Dashboard/img/MS.png'%}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card pb-4">
+              <div class="card-header ">
+                <h5 class="card-title">Boxing</h5>
+                <img src="{% static 'Dashboard/img/BG.jpg'%}" class="mt-2" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   <!--   Core JS Files   -->
+{% endblock base  %}

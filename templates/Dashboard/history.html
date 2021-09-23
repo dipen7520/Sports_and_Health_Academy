@@ -1,0 +1,181 @@
+{% extends 'Dashboard/base.html' %}
+{% load static %}
+{% block base %}
+  <div class="wrapper ">
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:;">Welcome, {{user.first_name}}</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">Your Active Plan</h4>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class=" text-primary">
+                      <th>
+                        Full Name
+                      </th>
+                      <th>
+                        Your Sports
+                      </th>
+                      <th class="">
+                        Your Sports Plan
+                      </th>
+                      <th class="text-right">
+                        Time Slot
+                      </th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                         
+                        </td>
+                        <td>
+          
+                        </td>
+                        <td>
+                        
+                        </td>
+                        <td class="text-right">
+                          
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          
+                        </td>
+                        <td>
+                          
+                        </td>
+                        <td>
+                          
+                        </td>
+                        <td class="text-right">
+                          
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          
+                        </td>
+                        <td>
+                          
+                        </td>
+                        <td>
+                      
+                        </td>
+                        <td class="text-right">
+                      
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          
+                        </td>
+                        <td>
+                          
+                        </td>
+                        <td>
+              
+                        </td>
+                        <td class="text-right">
+                        
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          
+                        </td>
+                        <td>
+                        
+                        </td>
+                        <td>
+                        
+                        </td>
+                        <td class="text-right">
+                        
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          
+                        </td>
+                        <td>
+                        
+                        </td>
+                        <td>
+                        
+                        </td>
+                        <td class="text-right">
+                
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                        
+                        </td>
+                        <td>
+                      
+                        </td>
+                        <td>
+                    
+                        </td>
+                        <td class="text-right">
+                
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <footer class="footer footer-black  footer-white ">
+        <div class="container-fluid">
+          <div class="row">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="" target="_blank">Address</a>
+                </li>
+                <li><a href="" target="_blank">Our Timing</a></li>
+                <li><a href="" target="_blank">Touch with us</a></li>
+              </ul>
+            </nav>
+            <div class="credits ml-auto">
+              <span class="copyright">
+                © <script>
+                  document.write(new Date().getFullYear())
+                </script>, made by<i class="fa fa-heart heart"></i> Dipen Jakasaniya
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+{% endblock base  %}

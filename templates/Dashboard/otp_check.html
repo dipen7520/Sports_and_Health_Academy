@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>OTP Verification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link rel="stylesheet" href="{% static 'login/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css'%}">
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="{% static 'login/css/style.css' %}">
+</head>
+
+<body>
+    <div class="wrapper" style="background-image: url('images/bg-registration-form-1.jpg');">
+        <div class="inner">
+            <div class="image-holder">
+                <img src="{% static 'login/images/loginS.png' %}" alt="">
+            </div>
+            <form action="otpcheck" method="POST">
+                {% for msg in messages %}
+                <div class="alert alert-danger" style="text-align: center; background-color: red; color: white;">
+                    <strong>{{msg}}</strong>
+                </div>
+                {% endfor%} {% csrf_token %}
+                <h3>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp OTP &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Verification</h3>
+                <h4 style="text-align: center;">OTP for verification sent to Your Email</h4> <br>
+                <div class="form-wrapper">
+                    <input type="text" name="otp" placeholder="Enter Your OTP Here" class="form-control">
+                    <i class="zmdi zmdi-account"></i>
+                </div>
+                <button>Sumbit
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+                <hr>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

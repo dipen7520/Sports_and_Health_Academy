@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link rel="stylesheet" href="{% static 'registration/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css'%}">
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="{% static 'registration/css/style.css' %}">
+</head>
+
+<body>
+    <div class="wrapper" style="background-image: url('images/bg-registration-form-1.jpg');">
+        <div class="inner">
+            <div class="image-holder">
+                <img src="{% static 'registration/images/sport.png' %}" alt="">
+            </div>
+            <form action="register" method="POST">
+                {% for msg in messages %}
+                <div class="alert alert-danger" style="text-align: center; background-color: red; color: white;">
+                    <strong>{{msg}}</strong>
+                </div>
+                {% endfor%} {%csrf_token %}
+                <h3>Sports Club Registration Form</h3>
+                <div class="form-group">
+                    <input type="text" name="fname" placeholder="Athlete First Name" class="form-control">
+                    <input type="text" name="lname" placeholder="Last Name" class="form-control">
+                </div>
+                <div class="form-wrapper">
+                    <input type="text" name="uname" placeholder="Username" class="form-control">
+                    <i class="zmdi zmdi-account"></i>
+                </div>
+                <div class="form-wrapper">
+                    <input type="text" name="eml" placeholder="Email Address" class="form-control">
+                    <i class="zmdi zmdi-email"></i>
+                </div>
+                <div class="form-wrapper">
+                    <input type="password" name="pass" placeholder="Password" class="form-control">
+                    <i class="zmdi zmdi-lock"></i>
+                </div>
+                <div class="form-wrapper">
+                    <input type="password" name="conpass" placeholder="Confirm Password" class="form-control">
+                    <i class="zmdi zmdi-lock"></i>
+                </div>
+                <button>Register now
+            		<i class="zmdi zmdi-arrow-right"></i>
+        		</button>
+                <hr>
+                <a href="{% url 'login' %}">Already have an account?</a>
+                </f </div>
+        </div>
+</body>
+
+</html>

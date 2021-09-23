@@ -1,0 +1,69 @@
+{% extends 'Dashboard/base.html' %}
+{% load static %}
+{% block base %}
+
+  <div class="wrapper ">
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:;">Welcome,{{user.first_name}}</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <a class="btn" href="{% url 'logout' %}">Logout</a>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+        <div class="row mt-5 pt-5">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">About BRUTAL Sports Academy</h5>
+                      <hr>
+                      <img class="fi" src="{% static 'Dashboard/img/fi.png' %}" alt="">
+                      <p class="para"> Skill as well as character matters to us as we build our future champions. Life coaches help shape the personality of our participants to make tomorrow’s athletes. Moreover, we hire specialized dietitians to advise participants on understanding food components, types, and needs.<p>
+                        
+                      <p class="para">We specialize in discovering talents and developing them in different sports games. We distribute our focus on the body and mind health of our young athletes, never forgetting to maintain a healthy balance to create a healthy sport society.</p> 
+                        
+                      <p class="para">Brutal Sports Academy aims to construct and sculpt individuals who can justly represent our beloved kingdom and the rest of the Arab world, with skill, determination, and sportsmanship.</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-11 ml-2">
+            <div class="card ">
+              <div class="card-header">
+                <h5 class="card-title">Vision</h5>
+                <p class="card-category">We aim to fabricate a mindset in a generation that fundamentally believes that health and sports are a lifestyle and that one of the most important pillars in an individual’s success is having a healthy mind in a healthy body. We do so in synchrony with the 2030 vision of the Kingdom of Saudi Arabia of creating a healthy and sportive society. We like to envision this new generation as qualified as possible to represent the youth in Saudi or Arabian leagues in European championships and International forums.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-11 ml-2">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">Mission</h5>
+                <p class="card-category">Champions Sports Academy employs certified coaches and specialists in the field of Life coaching and diet to help our participants build healthy and strong bodies and minds. We work collaboratively as a team of qualified coaches and advisors to help our future champions build discipline and self confidence. Finally, we believe in interlacing the health of the body and mind and thus we continuously integrate extensive sport knowledge and physical and mental practice.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+{% endblock base  %}

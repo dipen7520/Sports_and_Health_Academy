@@ -1,0 +1,33 @@
+{% load static %}
+ <!-- Start header -->
+         <header class="top-header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <div class="logo_main">
+                        <p class="bsa">B R U T A L</p>
+                        <p class="sa">Sports Academy</p>
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn"><img
+                           src="{% static 'index/images/menu_icon.png' %}"></button>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- End header -->
+<div class="wrapper">
+      <nav id="sidebar">
+         <div class="menu_section">
+            <ul>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#service">Services</a></li>
+               <li><a href="#contact">Contact us</a></li>
+               <li><a href="{% url 'register' %}">Registration</a></li>
+               <li><a href="{% url 'login' %}">Login</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div id="content">

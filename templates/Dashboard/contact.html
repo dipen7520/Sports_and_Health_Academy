@@ -1,0 +1,190 @@
+{% extends 'Dashboard/base.html' %}
+{% load static %}
+{% block base %}
+  <div class="wrapper ">
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:;">Contact us</a>
+          </div>
+        </div>
+      </nav>
+      <div class="form4 top">
+         <div class="container col-md-15">
+            <div class="row">
+               <div class="col-md-7 col-md-offset-2">
+                  <div class="form-bg">
+                    <form class="form" method="post">
+                        {% csrf_token %}
+                        <div class="form-group"> <label class="sr-only">Your Name</label> <input type="text" class="form-control" required="" id="nameNine" name="name" placeholder="Your Name"> </div>
+                        <div class="form-group"> <label class="sr-only">Email</label> <input type="email" class="form-control" required="" id="emailNine" name="email" placeholder="Email Address"> </div>
+                        <div class="form-group"> <label class="sr-only">Phone Number</label> <input type="text" class="form-control" required="" id="nameNine" name="phone_no" placeholder="Phone Number"> </div>
+                        <div class="form-group"> <label class="sr-only">Type your message</label> <textarea class="form-control" required="" rows="7" id="messageNine" placeholder="Write message" name="textmsg"></textarea></div> 
+                        <button type="submit" class="btn text-center btn-blue">Send Message</button>
+                    </form>
+                  </div>
+               </div>
+            </div>
+          </div>
+      </div>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card ">
+              <div class="card-header ">
+                Google Maps
+              </div>
+              <div class="card-body ">
+                <div id="map" class="map"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <footer class="footer footer-black  footer-white ">
+        <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class=""></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class=""></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class=""></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class=""></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <h3>BRUTAL Sports Academy</h3>
+          <p>
+           To demand more of yourself than you do of others is the first step on any ladder of success.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Day
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Mondayr</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Tuesday</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Wednesday</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Thursday</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Friday</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Saturday & Sunday</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Time
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">07:00 AM - 08:30 PM</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">07:00 AM - 08:45 PM</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">07:00 AM - 08:30 PM</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">06:30 AM - 08:00 PM</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">07:30 AM - 09:00 PM</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">CLOSSED!!!</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="nc-icon nc-pin-3"></i> 203 B block L.D. Hostel, Navarangpura, Ahmedabad</p>
+          <p>
+            <i class=""></i>
+            brutalsportsacademy@gmail.com
+          </p>
+          <p><i class="nc-icon nc-chat-33"></i>  +91 63592 89966</p>
+          <p><i class="nc-icon nc-chat-33"></i>  +91 79849 83741</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="#">Made by : Dipen Jakasaniya</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+      </footer>
+    </div>
+  </div>
+{% endblock base  %}

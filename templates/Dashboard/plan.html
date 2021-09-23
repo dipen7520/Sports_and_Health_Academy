@@ -1,0 +1,96 @@
+{% extends 'Dashboard/base.html' %}
+{% load static %}
+{% block base %}
+
+  <div class="wrapper ">
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:;">Welcome to Our club Plans</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row ml-4">
+          <div class="col-md-5">
+            <div class="card pb-3">
+              <div class="card-header">
+                <h5 class="card-title">Silver Card Membership</h5><hr>
+                 <img src="{% static 'Dashboard/img/silver.jpg'%}" alt=""><hr>
+                 <p>Basic Sport you selected</p>
+                 <p>Group Practice</p>
+                 <p>No other Benefits</p>
+                 <h2><p>Price : $149 only</p></h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 ml-5">
+            <div class="card pb-3">
+              <div class="card-header ">
+                <h5 class="card-title">Gold Card Membership</h5><hr>
+                <img src="{% static 'Dashboard/img/gold.jpg'%}" alt=""><hr>
+                 <p>Maximum 4 sports Free</p>
+                 <p>Group Practice + Gymnasium free</p>
+                 <p>Drink + Swimming</p>
+                 <h2><p>Price : $289 only</p></h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="card pb-3">
+              <div class="card-header">
+                <h5 class="card-title">Platinum Card Membership</h5><hr>
+                <img src="{% static 'Dashboard/img/Platinum.jpg'%}" alt=""><hr>
+                 <p>Unlimited Sports Free + Wifi</p>
+                 <p>Presonal Trainer + Dancing Training(Optional)</p>
+                 <p>Food & Drink Unlimited + Swimming anytime</p>
+                 <h2><p>Price : $349 only</p></h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 ml-5">
+            <div class="card pb-3">
+              <div class="card-header ">
+                <h5 class="card-title">VIP Membership</h5><hr>
+               <img src="{% static 'Dashboard/img/Vip.jpg'%}" alt=""><hr>
+                 <p>Life time free membership for all Family Members</p>
+                 <p>Unlimited Sports Free + Wifi + Gymnasium</p>
+                 <p>Personal Trainer + Our App Free access</p>
+                 <p>Food & Drink Unlimited + Swimming anytime</p>
+                 <h2><p>Price : $499 only</p></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer footer-black  footer-white ">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="credits ml-auto">
+              <span class="copyright">
+                © <script>
+                  document.write(new Date().getFullYear())
+                </script>, made <i class="fa fa-heart heart"></i> by Dipen Jakasaniya
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+{% endblock base  %}
